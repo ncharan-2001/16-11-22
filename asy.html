@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*setTimeout(()=>{
+			console.log("amz")
+		},500)
+		console.log("flip")
+		console.log("zara")*/
+		let promiseObj=new Promise((resolve,reject)=>{
+			var time=Math.random();
+			console.log(time)
+			if(time<.5)
+				return resolve("data is the server")
+			else
+				return reject(" server crashed")
+		})
+		console.log(promiseObj)
+		console.log("gm")
+	</script>
+
+</body>
+</html>
